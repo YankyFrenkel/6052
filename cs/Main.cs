@@ -20,7 +20,8 @@ namespace _6052
         public Op<T> Make(Func<T, Op<T>> maker)
             => maker(this);
 
-        public Op<T> ByOpcode(byte opcode) => this.Make(this.table[opcode]);
+        public Op<T> ByOpcode(byte opcode)
+            => this.Make(this.table[opcode]);
     }
 
     internal abstract class Op<T> where T : Opcodes<T>
