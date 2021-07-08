@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace _6052
+namespace _60529
 {
     internal class Opcodes<T> where T : Opcodes<T>
     {
